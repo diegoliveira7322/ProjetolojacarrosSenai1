@@ -170,25 +170,70 @@
             color: #ddd;
         }
     </style>
+
+
+
     
 </head>
 <body>
     <header>
         <h1>Luxury Cars</h1>
+
+        <link rel="shortcut icon" href="logo.png">
         
+
+    
        
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrossel de Imagens</title>
+        <style>
+            .carousel {
+                position: relative;
+                width: 100%;
+                max-width: 200px; /* Ajuste o tamanho conforme necessário */
+                overflow: hidden;
+                margin: auto;
+            }
+    
+            .carousel-images {
+                display: flex;
+                width: 100%; /* 100% para cada imagem, 3 imagens = 300% */
+                transition: transform 0.5s ease-in-out;
+            }
+    
+            .carousel-images img {
+                width: 100%;
+                height: auto;
+            }
+    
+            .carousel:hover .carousel-images {
+                animation: slide 6s infinite;
+            }
+    
+            @keyframes slide {
+                0% { transform: translateX(0); }
+                33% { transform: translateX(-100%); }
+                66% { transform: translateX(-200%); }
+                100% { transform: translateX(0); }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="ford-mustang-5.4-shelby-gt-500.jpg" alt="Imagem 1">
+                <img src="civic.jpg" alt="Imagem 2">
+                <img src="ford-maverick.jpg" alt="Imagem 3">
+            </div>
+        </div>
+    </body>
+    </html>
+    
+        
 
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#contact">Contato</a></li>
-               
-
-                
-            </ul>
-        </nav>
-    </header>
 
     <div class="hero">
         <h1>Encontre o Carro dos Seus Sonhos</h1>
@@ -240,7 +285,25 @@
         </div>
     </footer>
 
+
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+           
+
+            
+        </ul>
+    </nav>
+</header>
     <!-- Font Awesome for social icons -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-</body>
+    
+
+/body>
+
+
+
 </html>
